@@ -1,0 +1,29 @@
+[project]
+name = "maximal-lotteries"
+version = "0.1.0"
+description = "Add your description here"
+authors = [{ name = "Thomas MK", email = "tmke8@posteo.net" }]
+dependencies = [
+    "numpy>=2.0.0",
+    "scipy>=1.14.0",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+virtual = true
+
+[tool.pyright]
+pythonVersion = "3.12"
+typeCheckingMode = "strict"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryIsInstance = "warning"
+
+[tool.hatch.metadata]
+allow-direct-references = true
