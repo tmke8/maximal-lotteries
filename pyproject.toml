@@ -16,7 +16,9 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "ipython~=8.26.0",
+]
 virtual = true
 
 [tool.pyright]
